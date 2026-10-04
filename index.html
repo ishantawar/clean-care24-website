@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Care24 — Dry Cleaning & Laundry in Sector 70A, Gurugram</title>
+<meta name="description" content="Clean Care24 Drycleaning & Laundry Studio, Sector 70A, Gurugram — premium dry cleaning, laundry, steam ironing, shoe and home-furnishing care with free doorstep pickup and delivery.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f2a3d'/%3E%3Cpath d='M32 14a6 6 0 0 1 6 6c0 3-2 4.5-4 5.6V28l18 12c2 1.4 1 4-1.4 4H13.4C11 44 10 41.4 12 40l18-12' fill='none' stroke='%23e9d8b4' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f2a3d;
+    --ink-2: #1d3f57;
+    --text: #22313d;
+    --muted: #5f6f7c;
+    --cream: #faf7f1;
+    --sand: #f1eadc;
+    --gold: #c8a46a;
+    --gold-soft: #e9d8b4;
+    --mist: #e6eef2;
+    --white: #ffffff;
+    --line: #e4ddd0;
+    --radius: 18px;
+    --shadow: 0 20px 50px -24px rgba(15, 42, 61, .28);
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; color: var(--ink); font-weight: 500; line-height: 1.15; letter-spacing: -.01em; }
+  a { color: inherit; text-decoration: none; }
+  img, svg { display: block; max-width: 100%; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+  section { padding: 110px 0; }
+  .section-head { max-width: 620px; margin-bottom: 56px; }
+  .section-head h2 { font-size: clamp(32px, 4.2vw, 46px); margin: 14px 0 16px; }
+  .section-head p { color: var(--muted); font-size: 17px; }
+  .center { text-align: center; margin-left: auto; margin-right: auto; }
+  .center .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 15px 28px; border-radius: 999px;
+    font-weight: 600; font-size: 15px; cursor: pointer; border: 0;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+  .btn-primary { background: var(--ink); color: var(--white); box-shadow: 0 12px 30px -12px rgba(15,42,61,.55); }
+  .btn-primary:hover { transform: translateY(-2px); background: var(--ink-2); }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid rgba(15,42,61,.22); }
+  .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .btn-gold { background: var(--gold); color: var(--ink); }
+  .btn-gold:hover { background: var(--gold-soft); transform: translateY(-2px); }
+
+  /* Top strip */
+  .strip { background: var(--ink); color: var(--gold-soft); font-size: 13px; }
+  .strip .wrap { display: flex; justify-content: space-between; gap: 16px; padding-top: 9px; padding-bottom: 9px; }
+  .strip span { display: inline-flex; align-items: center; gap: 8px; }
+
+  /* Nav */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250, 247, 241, .86);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s, box-shadow .3s;
+  }
+  header.scrolled { border-color: var(--line); box-shadow: 0 6px 24px -18px rgba(15,42,61,.4); }
+  nav { display: flex; align-items: center; justify-content: space-between; height: 78px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-mark { width: 42px; height: 42px; border-radius: 12px; background: var(--ink); display: grid; place-items: center; }
+  .logo-text strong { display: block; font-family: "Fraunces", serif; font-size: 21px; font-weight: 600; color: var(--ink); line-height: 1.05; }
+  .logo-text small { font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; }
+  .nav-links a { font-size: 15px; font-weight: 500; color: var(--text); position: relative; }
+  .nav-links a:not(.btn)::after {
+    content: ""; position: absolute; left: 0; bottom: -6px; width: 100%; height: 1.5px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .3s;
+  }
+  .nav-links a:not(.btn):hover::after { transform: scaleX(1); }
+  .nav-links .btn { padding: 11px 22px; color: var(--white); }
+  .menu-btn { display: none; background: none; border: 0; width: 44px; height: 44px; cursor: pointer; }
+  .menu-btn span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px auto; transition: .3s; }
+
+  /* Hero */
+  .hero { padding: 80px 0 110px; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; right: -180px; top: -160px; width: 640px; height: 640px; border-radius: 50%;
+    background: radial-gradient(circle, var(--mist) 0%, rgba(230,238,242,0) 70%);
+    z-index: -1;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; }
+  .hero h1 { font-size: clamp(42px, 6vw, 72px); margin: 22px 0 24px; }
+  .hero h1 em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .hero p.lead { font-size: 18.5px; color: var(--muted); max-width: 520px; margin-bottom: 36px; }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-stats { display: flex; gap: 44px; margin-top: 54px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .hero-stats strong { display: block; font-family: "Fraunces", serif; font-size: 32px; font-weight: 500; color: var(--ink); }
+  .hero-stats span { font-size: 13.5px; color: var(--muted); }
+
+  .hero-art { position: relative; aspect-ratio: 1 / 1.08; }
+  .hero-card {
+    position: absolute; inset: 0 0 0 8%;
+    border-radius: 220px 220px 28px 28px;
+    background: linear-gradient(165deg, var(--ink) 0%, var(--ink-2) 100%);
+    overflow: hidden; box-shadow: var(--shadow);
+  }
+  .hero-card svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .float {
+    position: absolute; background: var(--white); border-radius: 16px; padding: 14px 18px;
+    box-shadow: var(--shadow); display: flex; align-items: center; gap: 12px; font-size: 14px;
+    animation: bob 6s ease-in-out infinite;
+  }
+  .float .ic { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--sand); }
+  .float strong { display: block; color: var(--ink); font-size: 14.5px; }
+  .float small { color: var(--muted); font-size: 12.5px; }
+  .float-1 { left: -4%; top: 18%; }
+  .float-2 { right: -4%; bottom: 14%; animation-delay: -3s; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+  /* Trust bar */
+  .trust { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 30px 0; }
+  .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .trust-item { display: flex; align-items: center; gap: 14px; font-size: 14.5px; font-weight: 500; color: var(--ink); }
+  .trust-item svg { flex: none; }
+
+  /* Services */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .service {
+    background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 36px 32px; position: relative; overflow: hidden;
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s;
+  }
+  .service:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: transparent; }
+  .service .ic {
+    width: 58px; height: 58px; border-radius: 16px; background: var(--sand);
+    display: grid; place-items: center; margin-bottom: 26px; transition: background .35s;
+  }
+  .service:hover .ic { background: var(--ink); }
+  .service:hover .ic svg { stroke: var(--gold-soft); }
+  .service .ic svg { stroke: var(--ink); transition: stroke .35s; }
+  .service h3 { font-size: 23px; margin-bottom: 10px; }
+  .service p { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+  .service .from { font-size: 13.5px; color: var(--ink); font-weight: 600; display: flex; justify-content: space-between; align-items: center; padding-top: 18px; border-top: 1px dashed var(--line); }
+  .service .from span { color: var(--gold); }
+
+  /* Process */
+  .process { background: var(--ink); color: #c9d5dd; position: relative; overflow: hidden; }
+  .process h2, .process h3 { color: var(--white); }
+  .process .section-head p { color: #a9bac6; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; position: relative; }
+  .steps::before {
+    content: ""; position: absolute; top: 34px; left: 12%; right: 12%; height: 1px;
+    background: repeating-linear-gradient(90deg, rgba(233,216,180,.45) 0 6px, transparent 6px 14px);
+  }
+  .step { text-align: center; position: relative; }
+  .step .num {
+    width: 68px; height: 68px; border-radius: 50%; margin: 0 auto 26px;
+    display: grid; place-items: center; background: var(--ink); border: 1px solid rgba(233,216,180,.5);
+    font-family: "Fraunces", serif; font-size: 24px; color: var(--gold-soft); position: relative;
+  }
+  .step h3 { font-size: 21px; margin-bottom: 8px; }
+  .step p { font-size: 14.5px; max-width: 230px; margin: 0 auto; }
+
+  /* Why us */
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .why-visual {
+    border-radius: 28px; background: var(--sand); aspect-ratio: 1 / 1.05; position: relative; overflow: hidden;
+  }
+  .why-visual svg { width: 100%; height: 100%; }
+  .why-badge {
+    position: absolute; left: 28px; bottom: 28px; right: 28px; background: var(--white);
+    border-radius: 18px; padding: 22px 24px; display: flex; gap: 18px; align-items: center; box-shadow: var(--shadow);
+  }
+  .why-badge strong { font-family: "Fraunces", serif; font-size: 40px; color: var(--ink); font-weight: 500; line-height: 1; }
+  .why-badge p { font-size: 14px; color: var(--muted); line-height: 1.45; }
+  .features { display: grid; gap: 26px; margin-top: 8px; }
+  .feature { display: flex; gap: 20px; }
+  .feature .tick { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--white); border: 1px solid var(--line); display: grid; place-items: center; }
+  .feature h3 { font-size: 19px; margin-bottom: 4px; font-family: "Inter", sans-serif; font-weight: 600; letter-spacing: 0; }
+  .feature p { font-size: 15px; color: var(--muted); }
+
+  /* Pricing */
+  .pricing { background: var(--white); }
+  .tabs { display: inline-flex; background: var(--cream); border: 1px solid var(--line); border-radius: 999px; padding: 5px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center; }
+  .tab { padding: 10px 22px; border-radius: 999px; font-size: 14.5px; font-weight: 600; background: none; border: 0; cursor: pointer; color: var(--muted); font-family: inherit; transition: .25s; }
+  .tab.active { background: var(--ink); color: var(--white); }
+  .price-panel { display: none; max-width: 760px; margin: 0 auto; }
+  .price-panel.active { display: block; animation: fade .45s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .price-row { display: flex; align-items: baseline; gap: 14px; padding: 18px 4px; border-bottom: 1px solid var(--line); }
+  .price-row .name { font-weight: 500; color: var(--ink); }
+  .price-row .dots { flex: 1; border-bottom: 1.5px dotted #cfc6b5; transform: translateY(-5px); }
+  .price-row .amt { font-family: "Fraunces", serif; font-size: 20px; color: var(--ink); white-space: nowrap; }
+  .price-note { text-align: center; color: var(--muted); font-size: 14px; margin-top: 26px; }
+
+  /* FAQ */
+  .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; }
+  details { border-bottom: 1px solid var(--line); padding: 22px 0; }
+  details:first-of-type { border-top: 1px solid var(--line); }
+  summary {
+    list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+    font-weight: 600; font-size: 17px; color: var(--ink);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary .plus { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; transition: transform .3s, background .3s; }
+  details[open] summary .plus { transform: rotate(45deg); background: var(--ink); border-color: var(--ink); }
+  details[open] summary .plus svg { stroke: var(--white); }
+  details p { color: var(--muted); padding-top: 12px; font-size: 15.5px; max-width: 620px; }
+
+  /* Booking */
+  .booking { padding: 0 0 110px; }
+  .booking-card {
+    background: linear-gradient(140deg, var(--ink) 0%, var(--ink-2) 100%);
+    border-radius: 32px; padding: 64px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px;
+    color: #c9d5dd; position: relative; overflow: hidden;
+  }
+  .booking-card::after {
+    content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%;
+    border: 1px solid rgba(233,216,180,.18); right: -140px; top: -160px;
+  }
+  .booking-card h2 { color: var(--white); font-size: clamp(32px, 4vw, 44px); margin: 14px 0 18px; }
+  .contact-list { list-style: none; display: grid; gap: 18px; margin-top: 34px; }
+  .contact-list li { display: flex; gap: 14px; align-items: flex-start; font-size: 15px; }
+  .contact-list .ic { flex: none; width: 40px; height: 40px; border-radius: 12px; background: rgba(255,255,255,.08); display: grid; place-items: center; }
+  .contact-list strong { display: block; color: var(--white); font-weight: 600; }
+  form { background: var(--white); border-radius: 22px; padding: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; position: relative; z-index: 1; }
+  form h3 { grid-column: 1 / -1; font-size: 24px; margin-bottom: 4px; }
+  .field { display: grid; gap: 7px; }
+  .field.full { grid-column: 1 / -1; }
+  label { font-size: 13px; font-weight: 600; color: var(--ink); }
+  input, select, textarea {
+    font: inherit; font-size: 15px; color: var(--text); background: var(--cream);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 15px; width: 100%;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 4px rgba(200,164,106,.18); }
+  textarea { resize: vertical; min-height: 90px; }
+  form .btn { grid-column: 1 / -1; justify-content: center; margin-top: 6px; }
+  .form-note { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted); text-align: center; }
+
+  /* Map */
+  .map { border-radius: 24px; overflow: hidden; border: 1px solid var(--line); height: 380px; margin-top: 0; }
+  .map iframe { width: 100%; height: 100%; border: 0; filter: grayscale(.25) contrast(1.05); }
+
+  /* Footer */
+  footer { background: #0b2030; color: #9fb1be; padding: 72px 0 30px; font-size: 14.5px; }
+  .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 44px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.08); }
+  footer h4 { color: var(--white); font-size: 14px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 18px; font-weight: 600; }
+  footer ul { list-style: none; display: grid; gap: 10px; }
+  footer a:hover { color: var(--gold-soft); }
+  footer .logo-text strong { color: var(--white); }
+  footer .logo-text small { color: #7f93a1; }
+  footer .logo-mark { background: rgba(255,255,255,.08); }
+  .foot-about { margin-top: 18px; max-width: 300px; }
+  .foot-bottom { display: flex; justify-content: space-between; gap: 16px; padding-top: 26px; font-size: 13px; flex-wrap: wrap; }
+
+  /* WhatsApp float */
+  .wa {
+    position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 58px; height: 58px; border-radius: 50%;
+    background: #25d366; display: grid; place-items: center; box-shadow: 0 14px 30px -10px rgba(37,211,102,.6);
+    transition: transform .25s;
+  }
+  .wa:hover { transform: scale(1.08); }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .float { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero-grid, .why-grid, .faq-grid, .booking-card { grid-template-columns: 1fr; }
+    .hero-art { max-width: 480px; margin: 0 auto; width: 100%; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .steps { grid-template-columns: repeat(2, 1fr); row-gap: 50px; }
+    .steps::before { display: none; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .why-grid { gap: 50px; }
+    .faq-grid { gap: 30px; }
+    .booking-card { padding: 48px; }
+  }
+  @media (max-width: 780px) {
+    section { padding: 80px 0; }
+    .wrap { padding: 0 16px; }
+    .strip .hide-sm { display: none; }
+    .menu-btn { display: block; }
+    .nav-links {
+      position: fixed; inset: 78px 0 auto 0; flex-direction: column; gap: 0; align-items: stretch;
+      background: var(--cream); border-bottom: 1px solid var(--line); padding: 10px 16px 22px;
+      transform: translateY(-120%); transition: transform .35s ease; z-index: -1;
+    }
+    .nav-links.open { transform: none; }
+    .nav-links li a:not(.btn) { display: block; padding: 14px 4px; border-bottom: 1px solid var(--line); }
+    .nav-links li .btn { margin-top: 16px; width: 100%; justify-content: center; }
+    .menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-btn.open span:nth-child(2) { opacity: 0; }
+    .menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .hero { padding: 50px 0 80px; }
+    .hero-stats { gap: 26px; flex-wrap: wrap; }
+    .trust .wrap { grid-template-columns: 1fr 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .booking-card { padding: 32px 20px; border-radius: 24px; }
+    form { grid-template-columns: 1fr; padding: 26px 20px; }
+    .foot-grid { grid-template-columns: 1fr; }
+    .float-1 { left: 0; } .float-2 { right: 0; }
+    .booking { padding-bottom: 80px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     EDIT YOUR BUSINESS DETAILS HERE (also used by the booking form)
+     Search this file for "EDIT:" to find every placeholder.
+     ================================================================ -->
+
+<div class="strip">
+  <div class="wrap">
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <!-- EDIT: opening hours -->
+      Open daily · 9:00 AM – 9:00 PM
+    </span>
+    <span class="hide-sm">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>
+      Free doorstep pickup & delivery
+    </span>
+  </div>
+</div>
+
+<header id="top">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo" aria-label="Clean Care24 home">
+        <span class="logo-mark">
+          <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="#e9d8b4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 12a6 6 0 0 1 6 6c0 3-2 4.5-4 5.6V27l20 13c2 1.4 1 4-1.4 4H11.4C9 44 8 41.4 10 40l20-13"/></svg>
+        </span>
+        <span class="logo-text"><strong>Clean Care24</strong><small>Drycleaning &amp; Laundry Studio</small></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#book" class="btn btn-primary">Book a pickup</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Premium garment care</span>
+        <h1>Fresh, crisp &amp; cared for — <em>every single time.</em></h1>
+        <p class="lead">From everyday laundry to your finest silks and wedding wear, Clean Care24 cleans, presses and returns your clothes looking their best — picked up and delivered right to your door.</p>
+        <div class="hero-ctas">
+          <a href="#book" class="btn btn-primary">
+            Schedule free pickup
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#pricing" class="btn btn-ghost">View price list</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>24h</strong><span>Express turnaround</span></div>
+          <div><strong>Free</strong><span>Pickup &amp; delivery</span></div>
+          <div><strong>100%</strong><span>Hand-inspected</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="hero-card">
+          <!-- Illustrated garments on a rail -->
+          <svg viewBox="0 0 400 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6efe2"/><stop offset="1" stop-color="#e9d8b4"/></linearGradient>
+              <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe9ef"/><stop offset="1" stop-color="#b9cdd9"/></linearGradient>
+              <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8a46a"/><stop offset="1" stop-color="#a9854d"/></linearGradient>
+            </defs>
+            <circle cx="320" cy="90" r="120" fill="#ffffff" opacity=".04"/>
+            <circle cx="60" cy="380" r="140" fill="#ffffff" opacity=".035"/>
+            <line x1="20" y1="120" x2="380" y2="120" stroke="#e9d8b4" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+            <!-- shirt -->
+            <g transform="translate(55 120)">
+              <path d="M40 0v14" stroke="#e9d8b4" stroke-width="3"/>
+              <path d="M40 14 L10 34 L0 80 L18 84 L22 62 L22 210 L58 210 L58 62 L62 84 L80 80 L70 34 Z" fill="url(#g2)"/>
+              <path d="M30 26 L40 44 L50 26" fill="none" stroke="#0f2a3d" stroke-width="2" opacity=".35"/>
+              <line x1="40" y1="44" x2="40" y2="205" stroke="#0f2a3d" stroke-width="1.5" opacity=".2"/>
+              <circle cx="40" cy="70" r="2" fill="#0f2a3d" opacity=".35"/><circle cx="40" cy="100" r="2" fill="#0f2a3d" opacity=".35"/><circle cx="40" cy="130" r="2" fill="#0f2a3d" opacity=".35"/>
+            </g>
+            <!-- dress / kurta -->
+            <g transform="translate(150 120)">
+              <path d="M50 0v14" stroke="#e9d8b4" stroke-width="3"/>
+              <path d="M50 14 L26 28 L30 70 L8 250 L92 250 L70 70 L74 28 Z" fill="url(#g1)"/>
+              <path d="M38 24 Q50 40 62 24" fill="none" stroke="#c8a46a" stroke-width="2"/>
+              <path d="M18 210 Q50 222 82 210" fill="none" stroke="#c8a46a" stroke-width="2" opacity=".7"/>
+              <path d="M14 228 Q50 240 86 228" fill="none" stroke="#c8a46a" stroke-width="2" opacity=".7"/>
+            </g>
+            <!-- blazer -->
+            <g transform="translate(262 120)">
+              <path d="M44 0v14" stroke="#e9d8b4" stroke-width="3"/>
+              <path d="M44 14 L14 30 L4 90 L20 92 L22 200 L66 200 L68 92 L84 90 L74 30 Z" fill="url(#g3)"/>
+              <path d="M30 24 L44 70 L58 24" fill="none" stroke="#0f2a3d" stroke-width="2" opacity=".35"/>
+              <line x1="44" y1="70" x2="44" y2="196" stroke="#0f2a3d" stroke-width="1.5" opacity=".25"/>
+              <rect x="54" y="110" width="14" height="3" rx="1.5" fill="#0f2a3d" opacity=".3"/>
+            </g>
+            <!-- sparkles -->
+            <g fill="#e9d8b4">
+              <path d="M330 300 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" opacity=".9"/>
+              <path d="M70 70 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" opacity=".7"/>
+              <path d="M235 400 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" opacity=".6"/>
+            </g>
+          </svg>
+        </div>
+        <div class="float float-1">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2" stroke-linecap="round"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span>
+          <div><strong>Eco-friendly</strong><small>Fabric-safe solvents</small></div>
+        </div>
+        <div class="float float-2">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2" stroke-linecap="round"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></span>
+          <div><strong>On its way</strong><small>Delivered fresh &amp; folded</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg>Damage-safe handling</div>
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>On-time, every time</div>
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="1.8"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>Skin-friendly detergents</div>
+      <div class="trust-item"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>UPI, cards &amp; cash</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Expert care for everything you wear — and more.</h2>
+        <p>Every garment is tagged, inspected and treated according to its fabric, so it comes back cleaner, brighter and lasting longer.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a2 2 0 0 1 2 2c0 1-.7 1.5-1.4 1.9V8l8 5.2c.8.6.4 1.8-.6 1.8H4c-1 0-1.4-1.2-.6-1.8L11.4 8"/><path d="M6 15v5h12v-5"/></svg></div>
+          <h3>Dry Cleaning</h3>
+          <p>Gentle solvent cleaning for suits, sarees, lehengas, silks, woollens and delicate fabrics.</p>
+          <div class="from">Starting from <span>₹99</span></div>
+        </article>
+        <article class="service reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><circle cx="12" cy="13" r="5"/><path d="M9.5 13.5c1-.8 2-.8 3 0s2 .8 3 0"/><circle cx="7.5" cy="5.5" r=".6" fill="currentColor"/></svg></div>
+          <h3>Wash &amp; Fold</h3>
+          <p>Everyday laundry washed, dried and neatly folded — priced by the kilo, ready in 24 hours.</p>
+          <div class="from">Starting from <span>₹79 / kg</span></div>
+        </article>
+        <article class="service reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18l-1.5-5.5A4 4 0 0 0 15.6 8.5H8"/><path d="M3 17v1.5h18V17"/><path d="M8 8.5V6"/><path d="M7 12h4"/></svg></div>
+          <h3>Steam Ironing</h3>
+          <p>Crisp, wrinkle-free professional steam press that holds its finish all day long.</p>
+          <div class="from">Starting from <span>₹15 / pc</span></div>
+        </article>
+        <article class="service reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M5 18l.8 1.7L7.5 20.5l-1.7.8L5 23l-.8-1.7-1.7-.8 1.7-.8z"/><path d="M19 15l.8 1.7 1.7.8-1.7.8L19 20l-.8-1.7-1.7-.8 1.7-.8z"/></svg></div>
+          <h3>Bridal &amp; Ethnic Wear</h3>
+          <p>Specialist care for heavy embroidery, zari, sequins and heirloom pieces — handled by hand.</p>
+          <div class="from">Starting from <span>₹349</span></div>
+        </article>
+        <article class="service reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c0-1 .6-2 1.6-2.3L9 11l2-4h3l1 5 5 1.5c1 .3 1 1.5 1 2.5v1H3z"/><path d="M3 17h18v2H3z"/></svg></div>
+          <h3>Shoe &amp; Bag Spa</h3>
+          <p>Deep cleaning, deodorising and restoration for sneakers, leather shoes and handbags.</p>
+          <div class="from">Starting from <span>₹299</span></div>
+        </article>
+        <article class="service reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18"/><path d="M5 3v18c2-1 3-3 3-6V3"/><path d="M19 3v18c-2-1-3-3-3-6V3"/></svg></div>
+          <h3>Curtains &amp; Home Linen</h3>
+          <p>Curtains, blankets, quilts, carpets and sofa covers — refreshed and returned ready to use.</p>
+          <div class="from">Starting from <span>₹149</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Laundry day, handled in four easy steps.</h2>
+        <p>Book in under a minute. We take care of the rest.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="num">01</div><h3>Book</h3><p>Schedule a pickup by call, WhatsApp or the form below.</p></div>
+        <div class="step reveal"><div class="num">02</div><h3>Pickup</h3><p>Our team collects your clothes from your doorstep — free.</p></div>
+        <div class="step reveal"><div class="num">03</div><h3>Clean &amp; care</h3><p>Sorted, stain-treated, cleaned and pressed by experts.</p></div>
+        <div class="step reveal"><div class="num">04</div><h3>Delivery</h3><p>Returned fresh, folded or hung — right on schedule.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="wrap why-grid">
+      <div class="why-visual reveal">
+        <svg viewBox="0 0 500 520" aria-hidden="true">
+          <circle cx="250" cy="230" r="170" fill="#ffffff" opacity=".55"/>
+          <circle cx="250" cy="230" r="120" fill="#ffffff" opacity=".7"/>
+          <!-- folded stack -->
+          <g transform="translate(150 150)">
+            <rect x="0" y="120" width="200" height="40" rx="8" fill="#0f2a3d"/>
+            <rect x="10" y="84" width="180" height="40" rx="8" fill="#c8a46a"/>
+            <rect x="20" y="48" width="160" height="40" rx="8" fill="#b9cdd9"/>
+            <rect x="30" y="12" width="140" height="40" rx="8" fill="#ffffff" stroke="#e4ddd0"/>
+            <path d="M70 12 v-8 a10 10 0 0 1 20 0" fill="none" stroke="#0f2a3d" stroke-width="3"/>
+            <rect x="85" y="24" width="30" height="16" rx="3" fill="#f1eadc"/>
+            <line x1="20" y1="140" x2="180" y2="140" stroke="#e9d8b4" stroke-width="2" stroke-dasharray="6 6" opacity=".6"/>
+          </g>
+          <g fill="#c8a46a">
+            <path d="M120 120 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/>
+            <path d="M380 180 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/>
+          </g>
+        </svg>
+        <div class="why-badge">
+          <strong>24h</strong>
+          <p>Express service available on most garments — perfect for last-minute events and travel.</p>
+        </div>
+      </div>
+      <div>
+        <div class="section-head reveal" style="margin-bottom:36px">
+          <span class="eyebrow">Why Clean Care24</span>
+          <h2>A studio standard of care, close to home.</h2>
+          <p>We treat your wardrobe the way you would — only with better equipment and years of fabric know-how.</p>
+        </div>
+        <div class="features">
+          <div class="feature reveal">
+            <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="2.4" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Fabric-first treatment</h3><p>Every item is checked for fabric type, colour-fastness and stains before cleaning begins.</p></div>
+          </div>
+          <div class="feature reveal">
+            <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="2.4" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Hygienic, separate processing</h3><p>Your clothes are tagged and cleaned in separate loads — never mixed with anyone else's.</p></div>
+          </div>
+          <div class="feature reveal">
+            <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="2.4" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Transparent pricing</h3><p>Clear per-piece and per-kilo rates. No hidden charges, no surprises at delivery.</p></div>
+          </div>
+          <div class="feature reveal">
+            <span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8a46a" stroke-width="2.4" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Premium finishing</h3><p>Steam pressed, quality-checked and packed in protective covers, ready to wear.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <!-- EDIT: replace these indicative rates with your actual price list -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Price list</span>
+        <h2>Simple, honest pricing.</h2>
+        <p>Indicative starting rates. Final price may vary with fabric and work.</p>
+      </div>
+      <div style="text-align:center" class="reveal">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="men" role="tab">Men</button>
+          <button class="tab" data-tab="women" role="tab">Women</button>
+          <button class="tab" data-tab="home" role="tab">Household</button>
+          <button class="tab" data-tab="laundry" role="tab">Laundry &amp; Ironing</button>
+        </div>
+      </div>
+      <div class="price-panel active" id="tab-men">
+        <div class="price-row"><span class="name">Shirt / T-shirt</span><span class="dots"></span><span class="amt">₹99</span></div>
+        <div class="price-row"><span class="name">Trousers / Jeans</span><span class="dots"></span><span class="amt">₹109</span></div>
+        <div class="price-row"><span class="name">Suit (2-piece)</span><span class="dots"></span><span class="amt">₹399</span></div>
+        <div class="price-row"><span class="name">Blazer / Coat</span><span class="dots"></span><span class="amt">₹299</span></div>
+        <div class="price-row"><span class="name">Kurta Pyjama</span><span class="dots"></span><span class="amt">₹199</span></div>
+        <div class="price-row"><span class="name">Sherwani</span><span class="dots"></span><span class="amt">₹599</span></div>
+      </div>
+      <div class="price-panel" id="tab-women">
+        <div class="price-row"><span class="name">Saree (plain)</span><span class="dots"></span><span class="amt">₹199</span></div>
+        <div class="price-row"><span class="name">Saree (silk / heavy)</span><span class="dots"></span><span class="amt">₹349</span></div>
+        <div class="price-row"><span class="name">Salwar Suit (3-piece)</span><span class="dots"></span><span class="amt">₹249</span></div>
+        <div class="price-row"><span class="name">Dress / Gown</span><span class="dots"></span><span class="amt">₹299</span></div>
+        <div class="price-row"><span class="name">Lehenga (bridal)</span><span class="dots"></span><span class="amt">₹999</span></div>
+        <div class="price-row"><span class="name">Shawl / Stole</span><span class="dots"></span><span class="amt">₹149</span></div>
+      </div>
+      <div class="price-panel" id="tab-home">
+        <div class="price-row"><span class="name">Curtain (per panel)</span><span class="dots"></span><span class="amt">₹199</span></div>
+        <div class="price-row"><span class="name">Blanket (single)</span><span class="dots"></span><span class="amt">₹299</span></div>
+        <div class="price-row"><span class="name">Blanket / Quilt (double)</span><span class="dots"></span><span class="amt">₹449</span></div>
+        <div class="price-row"><span class="name">Bedsheet</span><span class="dots"></span><span class="amt">₹149</span></div>
+        <div class="price-row"><span class="name">Sofa cover (per seat)</span><span class="dots"></span><span class="amt">₹149</span></div>
+        <div class="price-row"><span class="name">Carpet (per sq ft)</span><span class="dots"></span><span class="amt">₹25</span></div>
+      </div>
+      <div class="price-panel" id="tab-laundry">
+        <div class="price-row"><span class="name">Wash &amp; Fold (per kg)</span><span class="dots"></span><span class="amt">₹79</span></div>
+        <div class="price-row"><span class="name">Wash &amp; Iron (per kg)</span><span class="dots"></span><span class="amt">₹119</span></div>
+        <div class="price-row"><span class="name">Steam Iron (per piece)</span><span class="dots"></span><span class="amt">₹15</span></div>
+        <div class="price-row"><span class="name">Saree Roll Press</span><span class="dots"></span><span class="amt">₹79</span></div>
+        <div class="price-row"><span class="name">Shoe Spa (per pair)</span><span class="dots"></span><span class="amt">₹299</span></div>
+        <div class="price-row"><span class="name">Express 24h surcharge</span><span class="dots"></span><span class="amt">+50%</span></div>
+      </div>
+      <p class="price-note">Need a quote for something special? <a href="#book" style="color:var(--ink);font-weight:600;border-bottom:1px solid var(--gold)">Ask us on WhatsApp →</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap faq-grid">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered.</h2>
+        <p>Can't find what you're looking for? Give us a call or drop a message — we're happy to help.</p>
+      </div>
+      <div class="reveal">
+        <details open>
+          <summary>How long does dry cleaning take?<span class="plus"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2.6" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span></summary>
+          <p>Standard turnaround is 48–72 hours. Express 24-hour service is available for most garments; bridal and heavy ethnic wear may need a few extra days for careful hand-finishing.</p>
+        </details>
+        <details>
+          <summary>Is pickup and delivery really free?<span class="plus"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2.6" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span></summary>
+          <p>Yes — doorstep pickup and delivery is free within our service area for orders above the minimum order value. Just tell us your address when you book.</p>
+        </details>
+        <details>
+          <summary>Can you remove tough stains?<span class="plus"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2.6" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span></summary>
+          <p>We pre-treat every stain with fabric-appropriate methods and remove the vast majority, including oil, curry, ink and makeup. Old or set-in stains can sometimes only be lightened — we'll always tell you upfront.</p>
+        </details>
+        <details>
+          <summary>Are your cleaning products safe?<span class="plus"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2.6" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span></summary>
+          <p>We use eco-friendly, skin-friendly detergents and fabric-safe solvents, suitable for kids' clothing and sensitive skin.</p>
+        </details>
+        <details>
+          <summary>How do I pay?<span class="plus"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0f2a3d" stroke-width="2.6" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span></summary>
+          <p>Pay on delivery by UPI, card or cash — whatever is easiest for you.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / CONTACT -->
+  <section class="booking" id="book">
+    <div class="wrap">
+      <div class="booking-card reveal">
+        <div>
+          <span class="eyebrow">Book a pickup</span>
+          <h2>Let us take laundry off your list.</h2>
+          <p>Fill in the form and we'll confirm your pickup on WhatsApp within minutes. Prefer to talk? Call us directly.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e9d8b4" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+              <!-- EDIT: phone number -->
+              <div><strong>Call us</strong><a href="tel:+918826216060" class="js-phone-link">+91 88262 16060</a></div>
+            </li>
+            <li>
+              <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e9d8b4" stroke-width="1.8" stroke-linecap="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <!-- EDIT: studio address -->
+              <div><strong>Visit the studio</strong>Sector 70A, Gurugram, Haryana</div>
+            </li>
+            <li>
+              <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e9d8b4" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <!-- EDIT: opening hours -->
+              <div><strong>Opening hours</strong>Mon – Sun · 9:00 AM – 9:00 PM</div>
+            </li>
+          </ul>
+        </div>
+
+        <form id="bookingForm" novalidate>
+          <h3>Schedule a free pickup</h3>
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" required placeholder="Your name" autocomplete="name"></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required placeholder="10-digit mobile" autocomplete="tel"></div>
+          <div class="field"><label for="service">Service</label>
+            <select id="service" name="service">
+              <option>Dry Cleaning</option><option>Wash &amp; Fold</option><option>Steam Ironing</option>
+              <option>Bridal &amp; Ethnic Wear</option><option>Shoe &amp; Bag Spa</option><option>Curtains &amp; Home Linen</option>
+            </select>
+          </div>
+          <div class="field"><label for="date">Pickup date</label><input id="date" name="date" type="date" required></div>
+          <div class="field full"><label for="address">Pickup address</label><input id="address" name="address" required placeholder="House no., street, area" autocomplete="street-address"></div>
+          <div class="field full"><label for="notes">Notes (optional)</label><textarea id="notes" name="notes" placeholder="Number of items, special instructions, preferred time…"></textarea></div>
+          <button type="submit" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            Confirm on WhatsApp
+          </button>
+          <p class="form-note">We'll reply to confirm your pickup slot. No payment needed now.</p>
+        </form>
+      </div>
+
+      <div class="map reveal" style="margin-top:32px">
+        <!-- EDIT: replace with your exact Google Maps embed (Share → Embed a map) for a precise pin -->
+        <iframe title="Clean Care24 location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=CLEAN%20CARE24%20DRYCLEANING%20%26%20LAUNDRY%20STUDIO%2C%20Sector%2070A%2C%20Gurugram%2C%20Haryana&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo">
+          <span class="logo-mark"><svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="#e9d8b4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 12a6 6 0 0 1 6 6c0 3-2 4.5-4 5.6V27l20 13c2 1.4 1 4-1.4 4H11.4C9 44 8 41.4 10 40l20-13"/></svg></span>
+          <span class="logo-text"><strong>Clean Care24</strong><small>Drycleaning &amp; Laundry Studio</small></span>
+        </a>
+        <p class="foot-about">Premium dry cleaning, laundry and garment care — with free doorstep pickup and delivery.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">Dry Cleaning</a></li><li><a href="#services">Wash &amp; Fold</a></li><li><a href="#services">Steam Ironing</a></li><li><a href="#services">Shoe Spa</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#process">How it works</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#book">Book a pickup</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <!-- EDIT: contact details -->
+        <ul><li><a href="tel:+918826216060" class="js-phone-link">+91 88262 16060</a></li><li>Sector 70A, Gurugram, Haryana</li><li>Open daily, 9 AM – 9 PM</li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Clean Care24 Drycleaning &amp; Laundry Studio. All rights reserved.</span>
+      <span>Crafted with care.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+  // EDIT: your WhatsApp number — country code + number, digits only (e.g. 919812345678)
+  const WHATSAPP_NUMBER = "918826216060";
+
+  const waLink = (text) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  document.getElementById("waFloat").href = waLink("Hi Clean Care24! I'd like to book a laundry pickup.");
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Sticky header shadow
+  const header = document.querySelector("header");
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 10);
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  // Mobile menu
+  const menuBtn = document.getElementById("menuBtn"), navLinks = document.getElementById("navLinks");
+  const setMenu = (open) => {
+    navLinks.classList.toggle("open", open); menuBtn.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", open);
+  };
+  menuBtn.addEventListener("click", () => setMenu(!navLinks.classList.contains("open")));
+  navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+
+  // Pricing tabs
+  document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t === tab));
+    document.querySelectorAll(".price-panel").forEach(p => p.classList.toggle("active", p.id === "tab-" + tab.dataset.tab));
+  }));
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(".reveal").forEach((el, i) => {
+    el.style.transitionDelay = (i % 3) * 80 + "ms"; io.observe(el);
+  });
+
+  // Booking form → WhatsApp
+  const dateInput = document.getElementById("date");
+  dateInput.min = new Date().toISOString().split("T")[0];
+  document.getElementById("bookingForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = e.target.elements;
+    for (const el of e.target.querySelectorAll("[required]")) {
+      if (!el.value.trim()) { el.focus(); el.style.borderColor = "#c0563b"; return; }
+      el.style.borderColor = "";
+    }
+    const msg = [
+      "Hi Clean Care24! I'd like to book a pickup.",
+      "",
+      `Name: ${f.name.value}`,
+      `Phone: ${f.phone.value}`,
+      `Service: ${f.service.value}`,
+      `Pickup date: ${f.date.value}`,
+      `Address: ${f.address.value}`,
+      f.notes.value ? `Notes: ${f.notes.value}` : ""
+    ].filter(Boolean).join("\n");
+    window.open(waLink(msg), "_blank", "noopener");
+  });
+</script>
+</body>
+</html>
