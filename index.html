@@ -312,7 +312,7 @@
     }
     .nav-links.open { transform: none; }
     .nav-links li a:not(.btn) { display: block; padding: 14px 4px; border-bottom: 1px solid var(--line); }
-    .nav-links li .btn { margin-top: 16px; width: 100%; justify-content: center; }
+    .nav-links .nav-cta { display: none; }
     .menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .menu-btn.open span:nth-child(2) { opacity: 0; }
     .menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -364,7 +364,7 @@
         <li><a href="#process">How it works</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#book" class="btn btn-primary">Book a pickup</a></li>
+        <li class="nav-cta"><a href="#book" class="btn btn-primary">Book a pickup</a></li>
       </ul>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </nav>
